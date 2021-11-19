@@ -15,9 +15,5 @@ def index():
 def hello():
     user_ip = request.cookies.get('user_ip')
     #user_ip = request.remote_addr
-    return 'hello world peoople, tu ip es {}'.format(user_ip)
+    return render_template('hello.html', user_ip=user_ip)
 
-
-
-
-''
