@@ -1,0 +1,25 @@
+#comandos en windows 
+#activar venv
+myvenv\Scripts\activate
+#desactivar venv
+deactivate
+
+#instalar flask 
+pip install flask
+
+#para declarar la variable FLASK_APP (en Windows):
+set FLASK_APP=main.py
+
+#ver dependencias instladas en nuestro ambiente virtual
+pip freeze
+
+#prender servidor
+flask run 
+
+#prender modo debug en flask para visualizar los cambios en el navegador(cliente) a la vez que se modifica el codigo aclaraion en el navegador toca refrescar
+#agregamos una nueva variable de entorno
+#windows
+set FLASK_DEBUG=1
+#unix
+export FLASK_DEBUG=1
+
